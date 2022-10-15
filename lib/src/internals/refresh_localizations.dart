@@ -637,7 +637,7 @@ class KrRefreshString implements RefreshString {
   String? refreshingText = "새로 고침 중…";
 }
 
-/// English
+/// Burmese (Myanmar)
 class MyRefreshString implements RefreshString {
   @override
   String? canLoadingText = "နောက်ထပ်ဒေတာပြသရန်";
@@ -661,10 +661,10 @@ class MyRefreshString implements RefreshString {
   String? loadingText = "လုပ်ဆောင်နေပါသည်";
 
   @override
-  String? noMoreText = "နောက်ထပ်ဒေတာမရှိတော့ပါ";
+  String? noMoreText = "နောက်ထပ်ဒေတာ မရှိတော့ပါ";
 
   @override
-  String? refreshCompleteText = "လုပ်ဆောင်မှု ပြီးဆုံး";
+  String? refreshCompleteText = "လုပ်ဆောင်မှု အောင်မြင်သည်";
 
   @override
   String? refreshFailedText = "လုပ်ဆောင်မှု မအောင်မြင်ပါ";
