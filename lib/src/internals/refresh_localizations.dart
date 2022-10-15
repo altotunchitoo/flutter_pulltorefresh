@@ -6,7 +6,6 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 /// Implementation of localized strings for the [ClassicHeader],[ClassicFooter],[TwoLevelHeader]
 ///
@@ -80,6 +79,7 @@ class RefreshLocalizations {
     'sv': SvRefreshString(),
     'pt': PtRefreshString(),
     'ko': KrRefreshString(),
+    'my': MyRefreshString(),
   };
 
   RefreshString? get currentLocalization {
@@ -116,7 +116,8 @@ class RefreshLocalizationsDelegate
       'pt',
       'sv',
       'nl',
-      'es'
+      'es',
+      'my'
     ].contains(locale.languageCode);
   }
 
@@ -634,4 +635,40 @@ class KrRefreshString implements RefreshString {
 
   @override
   String? refreshingText = "새로 고침 중…";
+}
+
+/// English
+class MyRefreshString implements RefreshString {
+  @override
+  String? canLoadingText = "နောက်ထပ်ဒေတာပြသရန်";
+
+  @override
+  String? canRefreshText = "ပြန်လည်ဆန်းသစ်ရန်";
+
+  @override
+  String? canTwoLevelText = "နောက်အဆင့်ကိုသွားရန်";
+
+  @override
+  String? idleLoadingText = "ပိုမိုပြသရန် အပေါ်သို့ဆွဲတင်ပါ";
+
+  @override
+  String? idleRefreshText = "ပြန်လည်ဆန်းသစ်ရန် ဆွဲချပါ";
+
+  @override
+  String? loadFailedText = "လုပ်ဆောင်မှု မအောင်မြင်ပါ";
+
+  @override
+  String? loadingText = "လုပ်ဆောင်နေပါသည်";
+
+  @override
+  String? noMoreText = "နောက်ထပ်ဒေတာမရှိတော့ပါ";
+
+  @override
+  String? refreshCompleteText = "လုပ်ဆောင်မှု ပြီးဆုံး";
+
+  @override
+  String? refreshFailedText = "လုပ်ဆောင်မှု မအောင်မြင်ပါ";
+
+  @override
+  String? refreshingText = "လုပ်ဆောင်နေဆဲ";
 }
